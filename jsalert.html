@@ -1,0 +1,33 @@
+<html>
+<head><body>
+<script>
+function ver(){
+
+if(document.form.table.ti.value=="")
+{
+window.alert(" please enter name!!!")
+document.form.table.ti.focus
+}
+function show(){
+	 	var name=document.getElementById("ti").value;
+	 	var last=document.getElementById("ls").value;
+	 	document.write("name="+name+"lastname="+last);
+	 	}
+}
+</script>
+</head>
+<form id="table" onsubmit="return ver()">
+<table align="center" border="1">
+
+	<tr><td>First name</td>
+	 <td> <input type="text"  id="ti" placeholder="name"/></td></tr>
+	<tr><td>Last name</td>
+	 <td> <input type= "text" id="ls" placeholder="lastname"/> 
+	 </td></tr>
+	 <tr><th>class</th><td><input type="text" id="t2" required></td>
+	 </tr>
+	 <tr><td>roll number</td><td><input type="text"  id="r1">
+	 <tr><th colspan="2"> <input type="submit" value="reset"      Onclick="rest()">
+	<input type="submit" value="show" Onclick="show()"></th>
+	</tr>
+

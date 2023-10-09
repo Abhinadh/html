@@ -1,0 +1,80 @@
+<html>
+<head>
+<body>
+<script>
+	//function save(){
+	 	//var name=document.getElementById("ti").value;
+	 	var course=document.getElementById("co1").value;
+	 	var gender=document.getElementById("gen1").value;
+	 	var dob=document.getElementById("date1").value;
+                var adress=document.getElementById("area1").value;
+                var phone=document.getElementById("ph").value;
+                var gur=document.getElementById("gurdi").value;
+                var hobb=document.getElementById("hobb").value;
+                
+                if(name==NULL||name=="")
+                {
+                alert("note entered")
+	 	
+	 	}
+	function  	
+	function rev()
+	{
+	if(document.forms.t1.ti.value=="")
+	{
+	window.alert("enter any value");
+	document.forms.t1.ti.focus()
+	}
+		
+</script>
+</head>
+<h1 align="center">Registration form</h1>
+<table align="center"  cellpading="5" cellspacing="5" width="500" height="500" border="1">
+<form id="t1" onsubmit="return rev()">
+	<tr> 
+	<td>Name: </td>
+	 <td> <input type="text"  id="ti" placeholder="name"/></td></tr>
+	<tr>
+	    <td>Gender:</td>
+	          <td><input type ="radio" id="gen1"  name="gender"/>male
+	           <input type ="radio" id="gen1" name="gender"/>female 
+	            <input type ="radio" id="gen1" name="gender"/>others </td></tr>
+	  <tr>
+	     <td>Course:</td>
+	        <td>  <select id="co1">
+	                      <option>BA</option>
+	                      <option selected>BCA</option>
+	                      <option>BSE</option>
+	                      </select>
+	                        
+	                        
+	                        
+	                        
+	                        </td></tr>          
+	 <tr>
+	      <td>D.O.B:</td>
+	          <td><input type="date" id="date1"></td></tr>           
+	 <tr>  
+	    <td>Address:</td>
+	         <td><textarea id="area1"placeholder="adress" rows="5" cols="15" ></textarea></td>  </tr>  
+	 <tr> 
+	     <td>phone:</td>
+	       <td><input type="text"id="ph" name="phoneof" placeholder="phone"/></td>  </tr>
+	 <tr>
+	     <td>Gurdian:</td>
+	        <td><input type="text" id="gurdi" name="gurname" placeholder="Name">  </td></tr>
+	  <tr>
+	     <td>Hobbies:</td>
+	        <td><input type="checkbox" id="hobb" name="gurname" >Dance&nbsp
+	        <input type="checkbox" id="hobb" name="" >football&nbsp
+	        <input type="checkbox" id="hobb" name="gurname" >sing&nbsp
+	        <input type="checkbox" id="hobb4" name="gurname" >playing games  &nbsp
+	         </td></tr> 
+	   <tr><th colspan="2"> 
+	   <input type="submit" id="b1"  value="SAVE" name="submit"> </th></tr>                           
+</form>
+</table>
+</body>
+</html>	    
+	    
+	    
