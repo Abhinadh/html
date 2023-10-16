@@ -1,9 +1,9 @@
 <html>
 <head>
-<body>
+
 <script>
 	//function save(){
-	 	//var name=document.getElementById("ti").value;
+	 /*	//var name=document.getElementById("ti").value;
 	 	var course=document.getElementById("co1").value;
 	 	var gender=document.getElementById("gen1").value;
 	 	var dob=document.getElementById("date1").value;
@@ -16,18 +16,54 @@
                 {
                 alert("note entered")
 	 	
-	 	}
-	function  	
+	 	}*/
+	  	
 	function rev()
 	{
 	if(document.forms.t1.ti.value=="")
 	{
 	window.alert("enter any value");
-	document.forms.t1.ti.focus()
+	document.forms.t1.ti.focus();
+	}
+	else if(document.forms.t1.gen1.value=="")
+	{
+	window.alert("enter any value");
+	document.forms.t1.gen1.focus();
+	}
+	 else if(document.forms.t1.col.value=="")
+	{
+	window.alert("enter any value");
+	document.forms.t1.col.focus();
+	}
+	 else if(document.forms.date1.ti.value=="")
+	{
+	window.alert("enter any value");
+	document.forms.t1.date1.focus();
+	}
+	 else if(document.forms.t1.area1.value=="")
+	{
+	window.alert("enter any value");
+	document.forms.t1.area1.focus();
+	}
+	 else if(document.forms.t1.ph.value=="")
+	{
+	window.alert("enter any value");
+	document.forms.t1.ph.focus();
+	}
+	else if(document.forms.t1.gurd1.value=="")
+	{
+	window.alert("enter any value");
+	document.forms.t1.gurd1.focus();
+	}
+	else if(document.forms.t1.hobb.value=="")
+	{
+	window.alert("enter any value");
+	document.forms.t1.hobb.focus();
 	}
 		
 </script>
 </head>
+<body>
 <h1 align="center">Registration form</h1>
 <table align="center"  cellpading="5" cellspacing="5" width="500" height="500" border="1">
 <form id="t1" onsubmit="return rev()">
@@ -71,7 +107,7 @@
 	        <input type="checkbox" id="hobb4" name="gurname" >playing games  &nbsp
 	         </td></tr> 
 	   <tr><th colspan="2"> 
-	   <input type="submit" id="b1"  value="SAVE" name="submit"> </th></tr>                           
+	   <input type="button" id="b1"  value="SAVE" onclick="rev()"> </th></tr>                           
 </form>
 </table>
 </body>
